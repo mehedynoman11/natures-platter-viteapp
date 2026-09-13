@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Wireless Bluetooth Headphones",
+    "price": 49.99,
+    "img": "https://i.pinimg.com/736x/13/00/e3/1300e3d017aeab5340def1a5d48316bb.jpg",
+    "rating": 4.5
+  },
+  {
+    "name": "Smart Fitness Watch",
+    "price": 89.99,
+    "img": "https://i.pinimg.com/736x/60/3c/e1/603ce1691f3582ca18b995f2d50c7998.jpg",
+    "rating": 4.2
+  },
+  {
+    "name": "Portable Bluetooth Speaker",
+    "price": 34.99,
+    "img": "https://i.pinimg.com/736x/5e/15/bb/5e15bb667b2bbe91e5eda97b8fa879a9.jpg",
+    "rating": 4.7
+  },
+  {
+    "name": "Ergonomic Wireless Mouse",
+    "price": 19.99,
+    "img": "https://i.pinimg.com/1200x/2d/d1/e9/2dd1e9cbef70b76babd0894c91791a3d.jpg",
+    "rating": 4.3
+  },
+  {
+    "name": "Mechanical Gaming Keyboard",
+    "price": 74.99,
+    "img": "https://i.pinimg.com/736x/b7/85/56/b78556345cf343f62d2431330bee1378.jpg",
+    "rating": 4.6
+  },
+  {
+    "name": "USB-C Fast Charger",
+    "price": 24.99,
+    "img": "https://i.pinimg.com/736x/0c/19/cc/0c19cc08514a0de5a5028b68bccb9003.jpg",
+    "rating": 4.1
+  },
+  {
+    "name": "4K Action Camera",
+    "price": 129.99,
+    "img": "https://i.pinimg.com/736x/7c/de/1f/7cde1fa38291e508b320f60d94d2a67f.jpg",
+    "rating": 4.4
+  },
+  {
+    "name": "Noise Cancelling Earbuds",
+    "price": 59.99,
+    "img": "https://i.pinimg.com/736x/a6/94/f8/a694f8781d09fb87419479692f41cb60.jpg",
+    "rating": 4.8
+  },
+  {
+    "name": "Wireless Charging Pad",
+    "price": 27.99,
+    "img": "https://i.pinimg.com/736x/e6/58/9f/e6589f20e2207802ea9d05b402726f84.jpg",
+    "rating": 4.0
+  }
+]
