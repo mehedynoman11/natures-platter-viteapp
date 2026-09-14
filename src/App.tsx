@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-     <Navbar cart={cart} coin={coin} setCoin={setCoin}/>
+     <Navbar cart={cart} coin={coin} />
      <Banner />
      <Service />
      <Cart cart={cart} setCart={setCart} coin={coin} setCoin={setCoin}/>

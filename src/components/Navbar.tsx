@@ -1,16 +1,13 @@
 import logo from "../assets/nav-logo.png"
 import { FaCartShopping, FaMagnifyingGlass } from 'react-icons/fa6';
 import type { IProductType } from './type/products';
-import type { Dispatch, SetStateAction } from "react";
 import { FaCoins } from "react-icons/fa";
-import { Link } from "react-router-dom";
 interface NavbarProps {
     cart: IProductType[];
     coin: number
-    setCoin: Dispatch<SetStateAction<number>>
 }
 
-const Navbar = ({ cart, coin, setCoin }: NavbarProps) => {
+const Navbar = ({ cart, coin }: NavbarProps) => {
     return (
         <nav className="sticky top-0 z-50 bg-cyan-50">
             <div className="flex justify-between items-center py-4 px-4 container mx-auto md:max-w-[1200px]">
