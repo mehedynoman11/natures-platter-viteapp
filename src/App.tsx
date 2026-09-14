@@ -5,18 +5,20 @@ import PopularProduct from "./components/Product/PopularProduct"
 import Service from "./components/Service"
 import type { IProductType } from "./components/type/products"
 import Cart from "./components/Cart"
+// import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 
 function App() {
   const [cart, setCart] = useState <IProductType[]>([])
+  const [coin, setCoin] = useState(400);
 
   return (
     <>
-     <Navbar cart={cart}/>
+     <Navbar cart={cart} coin={coin} setCoin={setCoin}/>
      <Banner />
      <Service />
-     <Cart cart={cart} setCart={setCart}/>
-     <PopularProduct cart={cart} setCart={setCart}/>
+     <Cart cart={cart} setCart={setCart} coin={coin} setCoin={setCoin}/>
+     <PopularProduct cart={cart} setCart={setCart} coin={coin} setCoin={setCoin}/>
     </>
   )
 }

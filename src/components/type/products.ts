@@ -4,3 +4,7 @@ export interface IProductType {
     img: string
     rating: number
 }
+
+// interface ICartProduct extends IProductType {
+//   quantity: number;
+// }

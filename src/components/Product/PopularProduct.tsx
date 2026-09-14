@@ -7,9 +7,11 @@ import { PulseLoader } from 'react-spinners';
 interface PopularProductProps {
     cart: IProductType[];
     setCart: Dispatch<SetStateAction<IProductType[]>>
+    coin: number
+    setCoin: Dispatch<SetStateAction<number>>
 }
 
-const PopularProduct = ({cart, setCart}:PopularProductProps) => {
+const PopularProduct = ({cart, setCart, coin, setCoin}:PopularProductProps) => {
     const [popularProduct, setPopularProduct] = useState<IProductType[]>([]);
     const [loading, setLoading] = useState(true);
 
@@ -46,7 +48,13 @@ const PopularProduct = ({cart, setCart}:PopularProductProps) => {
                         {
                             popularProduct.map(product => {
                                 return (
-                                    <ProductCard cart={cart} setCart={setCart} key={product.name} product={product} />
+                                    <ProductCard 
+                                    coin={coin}
+                                    setCoin={setCoin}
+                                    cart={cart} 
+                                    setCart={setCart} 
+                                    key={product.name} 
+                                    product={product} />
                                 )
                             })
                         }

@@ -2,8 +2,8 @@ import banner from "../assets/Hero Section 1.png"
 
 const Banner = () => {
     return (
-    <header className='container mx-auto md:max-w-[1200px'>
-        <div className="mt10 md:mt-20 px-4">
+    <header className='container mx-auto md:max-w-[1200px] '>
+        <div className="mt-10 md:mt-20 px-4">
             <div className="text-center ">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">Freshness <span className="text-green-500">You
                     Can<br /> Count</span> On,

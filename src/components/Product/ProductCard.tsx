@@ -7,14 +7,26 @@ interface ProductCardProps {
     product: IProductType
     cart: IProductType[];
     setCart: Dispatch<SetStateAction<IProductType[]>>
+    coin: number
+    setCoin: Dispatch<SetStateAction<number>>
 }
 
-const ProductCard = ({ product, cart, setCart }: ProductCardProps) => {
+const ProductCard = ({ product, cart, setCart, coin, setCoin }: ProductCardProps) => {
 
     const handleAddToCart = (product: IProductType) => {
-        setCart([...cart, product])
-        toast.success("Product added to cart.")
+        const newPrice = coin - product.price;
+
+        if (newPrice < 0) {
+            toast.error("Not enough money for purchase.");
+            return;
+        }
+
+        setCart([...cart, product]);
+        setCoin(newPrice);
+        toast.success("Product added to cart.");
+
     }
+
 
     const isInCart = (product: IProductType) =>
         cart.some(cartProduct => cartProduct.name === product.name)
@@ -26,10 +38,10 @@ const ProductCard = ({ product, cart, setCart }: ProductCardProps) => {
                 <p className="text-sm md:text-lg ">{product.name}</p>
                 <p className=" font-bold text-shadow-md">{product.price}</p>
             </div>
-            <button 
-            disabled={isInCart(product)}
-            onClick={() => handleAddToCart(product)} 
-            className='btn w-full btn-success'>{isInCart(product)? "Added to cart":"Add to Cart"}</button>
+            <button
+                disabled={isInCart(product)}
+                onClick={() => handleAddToCart(product)}
+                className='btn w-full btn-success'>{isInCart(product) ? "Added to cart" : "Add to Cart"}</button>
         </div>
     );
 };
